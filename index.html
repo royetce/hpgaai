@@ -8,29 +8,35 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-.logo {
-    font-size: 28px;
-    font-weight: 700;
-    color: #1a73e8;
-    letter-spacing: 1px;
-}
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background: #f8f9fc;
 }
 
+/* Logo */
+.logo {
+    font-size: 34px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #1a73e8, #6c63ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.tagline {
+    font-size: 12px;
+    color: gray;
+}
+
 /* Navbar */
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 60px;
     background: white;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-header h2 {
-    color: #1a73e8;
 }
 
 nav a {
@@ -40,7 +46,7 @@ nav a {
     font-weight: 500;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
     text-align: center;
     padding: 100px 20px;
@@ -50,12 +56,10 @@ nav a {
 
 .hero h1 {
     font-size: 42px;
-    margin-bottom: 10px;
 }
 
 .hero p {
     font-size: 18px;
-    margin-bottom: 30px;
 }
 
 .btn {
@@ -67,7 +71,7 @@ nav a {
     font-weight: 600;
 }
 
-/* Services */
+/* Sections */
 .section {
     padding: 60px 20px;
     text-align: center;
@@ -97,15 +101,11 @@ nav a {
     color: #1a73e8;
 }
 
-/* CTA Section */
+/* CTA */
 .cta {
     background: #1a73e8;
     color: white;
     padding: 60px 20px;
-}
-
-.cta h2 {
-    margin-bottom: 20px;
 }
 
 /* Footer */
@@ -121,7 +121,11 @@ footer {
 <body>
 
 <header>
-    <h1 class="logo">HPGA AI</h1>
+    <div>
+        <h1 class="logo">HPGA AI</h1>
+        <span class="tagline">AI • Data • Telecom</span>
+    </div>
+
     <nav>
         <a href="#">Home</a>
         <a href="#services">Services</a>
@@ -132,6 +136,7 @@ footer {
 <section class="hero">
     <h1>Telecom | AI | Data Engineering Solutions</h1>
     <p><b>72+ Professionals | Remote Global Delivery</b></p>
+    <p>Deploy expert engineers in 48 hours 🚀</p>
     <a href="#contact" class="btn">Hire Now</a>
 </section>
 
@@ -143,10 +148,6 @@ footer {
             <h3>AI & GenAI</h3>
             <p>Chatbots, RAG systems, automation tools</p>
         </div>
-        <div>
-    <h1 class="logo">HPGA AI</h1>
-    <span style="font-size:12px;color:gray;">AI • Data • Telecom</span>
-</div>
 
         <div class="card">
             <h3>Data Engineering</h3>
@@ -166,35 +167,53 @@ footer {
 </section>
 
 <section class="section">
-    <h2>Our Work</h2>
+    <h2>Why Companies Choose Us</h2>
 
     <div class="services">
-       <section class="section">
+        <div class="card">
+            <h3>Deploy in 48 Hours</h3>
+            <p>Get project-ready engineers quickly</p>
+        </div>
+
+        <div class="card">
+            <h3>72+ Experts</h3>
+            <p>AI, Data, Telecom specialists</p>
+        </div>
+
+        <div class="card">
+            <h3>Global Delivery</h3>
+            <p>India, Africa, Middle East coverage</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
     <h2>Case Studies</h2>
 
     <div class="services">
         <div class="card">
             <h3>AI Chatbot Automation</h3>
-            <p><b>Problem:</b> Slow customer response</p>
-            <p><b>Solution:</b> GPT-based chatbot</p>
-            <p><b>Result:</b> 60% faster response time</p>
+            <p><b>Problem:</b> Slow response</p>
+            <p><b>Solution:</b> GPT chatbot</p>
+            <p><b>Result:</b> 60% faster replies</p>
         </div>
 
         <div class="card">
             <h3>Data Pipeline Optimization</h3>
-            <p><b>Problem:</b> High cloud cost</p>
-            <p><b>Solution:</b> Optimized ETL pipelines</p>
-            <p><b>Result:</b> 40% cost reduction</p>
+            <p><b>Problem:</b> High cost</p>
+            <p><b>Solution:</b> ETL optimization</p>
+            <p><b>Result:</b> 40% cost saved</p>
         </div>
 
         <div class="card">
-            <h3>FTTH Network Design</h3>
-            <p><b>Problem:</b> Delayed deployment</p>
-            <p><b>Solution:</b> Optimized OSP planning</p>
-            <p><b>Result:</b> Faster rollout</p>
+            <h3>FTTH Design</h3>
+            <p><b>Problem:</b> Slow rollout</p>
+            <p><b>Solution:</b> OSP planning</p>
+            <p><b>Result:</b> Faster deployment</p>
         </div>
     </div>
 </section>
+
 <section class="cta">
     <h2>Ready to Scale Your Business?</h2>
     <p>Work with our global team of 72+ engineers</p>
@@ -214,24 +233,28 @@ footer {
     <p>Email: p.roy@hpgaai.com</p>
     <p>Phone: +91 8334042526</p>
 </section>
+
 <footer>
     <p>© 2026 HPGA Enterprise | All Rights Reserved</p>
 </footer>
+
+<!-- WhatsApp Button -->
 <a href="https://wa.me/918334042526" target="_blank" 
 style="position:fixed;bottom:20px;right:20px;background:#25D366;color:white;
-padding:15px 18px;border-radius:50%;font-size:20px;text-decoration:none;">
+padding:15px;border-radius:50%;text-decoration:none;">
 💬
 </a>
 
-<div id="chatbox" style="position:fixed;bottom:90px;right:20px;width:250px;background:white;border:1px solid #ccc;padding:10px;border-radius:10px;display:none;">
+<!-- Chatbot -->
+<div id="chatbox" style="position:fixed;bottom:100px;right:20px;width:260px;background:white;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.2);padding:10px;display:none;">
     <p><b>HPGA Assistant</b></p>
-    <p id="chat-response">Hi! How can we help you?</p>
-    <input type="text" id="user-input" placeholder="Type here..." style="width:100%;">
-    <button onclick="sendMessage()">Send</button>
+    <p id="chat-response">Hi 👋 How can we assist you?</p>
+    <input type="text" id="user-input" placeholder="Type your query..." style="width:100%;padding:5px;">
+    <button onclick="sendMessage()" style="margin-top:5px;width:100%;">Send</button>
 </div>
 
 <button onclick="toggleChat()" 
-style="position:fixed;bottom:80px;right:20px;background:#1a73e8;color:white;padding:15px;border:none;border-radius:50%;">
+style="position:fixed;bottom:90px;right:20px;background:#1a73e8;color:white;padding:15px;border:none;border-radius:50%;">
 💬
 </button>
 
@@ -246,16 +269,18 @@ function sendMessage() {
     var response = "Thanks! Please share your requirement. Our team will contact you shortly.";
 
     if (input.includes("ai") || input.includes("chatbot")) {
-        response = "We build AI chatbots, RAG systems & automation solutions. Would you like a demo?";
+        response = "We build AI chatbots, RAG systems & automation solutions.";
     } 
     else if (input.includes("data")) {
-        response = "We provide data engineering, ETL pipelines & analytics solutions.";
+        response = "We provide data engineering & analytics solutions.";
     } 
     else if (input.includes("telecom") || input.includes("ftth")) {
-        response = "We deliver FTTH design & telecom engineering services globally.";
+        response = "We deliver FTTH design & telecom services globally.";
     }
 
     document.getElementById("chat-response").innerText = response;
 }
-</script></body>
+</script>
+
+</body>
 </html>
