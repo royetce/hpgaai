@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HPGA AI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a73e8;
+    letter-spacing: 1px;
+}
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fc;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+header h2 {
+    color: #1a73e8;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #1a73e8, #6c63ff);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: white;
+    color: #1a73e8;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Services */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    width: 260px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    color: #1a73e8;
+}
+
+/* CTA Section */
+.cta {
+    background: #1a73e8;
+    color: white;
+    padding: 60px 20px;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1 class="logo">HPGA AI</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Telecom | AI | Data Engineering Solutions</h1>
+    <p><b>72+ Professionals | Remote Global Delivery</b></p>
+    <a href="#contact" class="btn">Hire Now</a>
+</section>
+
+<section id="services" class="section">
+    <h2>Our Expertise</h2>
+
+    <div class="services">
+        <div class="card">
+            <h3>AI & GenAI</h3>
+            <p>Chatbots, RAG systems, automation tools</p>
+        </div>
+        <div>
+    <h1 class="logo">HPGA AI</h1>
+    <span style="font-size:12px;color:gray;">AI • Data • Telecom</span>
+</div>
+
+        <div class="card">
+            <h3>Data Engineering</h3>
+            <p>ETL pipelines, analytics, cloud data</p>
+        </div>
+
+        <div class="card">
+            <h3>FTTH Design</h3>
+            <p>OSP planning, telecom network solutions</p>
+        </div>
+
+        <div class="card">
+            <h3>Software Dev</h3>
+            <p>Web apps, APIs, backend systems</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Our Work</h2>
+
+    <div class="services">
+       <section class="section">
+    <h2>Case Studies</h2>
+
+    <div class="services">
+        <div class="card">
+            <h3>AI Chatbot Automation</h3>
+            <p><b>Problem:</b> Slow customer response</p>
+            <p><b>Solution:</b> GPT-based chatbot</p>
+            <p><b>Result:</b> 60% faster response time</p>
+        </div>
+
+        <div class="card">
+            <h3>Data Pipeline Optimization</h3>
+            <p><b>Problem:</b> High cloud cost</p>
+            <p><b>Solution:</b> Optimized ETL pipelines</p>
+            <p><b>Result:</b> 40% cost reduction</p>
+        </div>
+
+        <div class="card">
+            <h3>FTTH Network Design</h3>
+            <p><b>Problem:</b> Delayed deployment</p>
+            <p><b>Solution:</b> Optimized OSP planning</p>
+            <p><b>Result:</b> Faster rollout</p>
+        </div>
+    </div>
+</section>
+<section class="cta">
+    <h2>Ready to Scale Your Business?</h2>
+    <p>Work with our global team of 72+ engineers</p>
+    <a href="#contact" class="btn">Get in Touch</a>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+
+    <form action="https://formspree.io/f/yourformid" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required><br><br>
+        <input type="email" name="email" placeholder="Your Email" required><br><br>
+        <textarea name="message" placeholder="Your Requirement" required></textarea><br><br>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <p>Email: p.roy@hpgaai.com</p>
+    <p>Phone: +91 8334042526</p>
+</section>
+<footer>
+    <p>© 2026 HPGA Enterprise | All Rights Reserved</p>
+</footer>
+<a href="https://wa.me/918334042526" target="_blank" 
+style="position:fixed;bottom:20px;right:20px;background:#25D366;color:white;
+padding:15px 18px;border-radius:50%;font-size:20px;text-decoration:none;">
+💬
+</a>
+
+<div id="chatbox" style="position:fixed;bottom:90px;right:20px;width:250px;background:white;border:1px solid #ccc;padding:10px;border-radius:10px;display:none;">
+    <p><b>HPGA Assistant</b></p>
+    <p id="chat-response">Hi! How can we help you?</p>
+    <input type="text" id="user-input" placeholder="Type here..." style="width:100%;">
+    <button onclick="sendMessage()">Send</button>
+</div>
+
+<button onclick="toggleChat()" 
+style="position:fixed;bottom:80px;right:20px;background:#1a73e8;color:white;padding:15px;border:none;border-radius:50%;">
+💬
+</button>
+
+<script>
+function toggleChat() {
+    var chat = document.getElementById("chatbox");
+    chat.style.display = chat.style.display === "none" ? "block" : "none";
+}
+
+function sendMessage() {
+    var input = document.getElementById("user-input").value.toLowerCase();
+    var response = "Thanks! Please share your requirement. Our team will contact you shortly.";
+
+    if (input.includes("ai") || input.includes("chatbot")) {
+        response = "We build AI chatbots, RAG systems & automation solutions. Would you like a demo?";
+    } 
+    else if (input.includes("data")) {
+        response = "We provide data engineering, ETL pipelines & analytics solutions.";
+    } 
+    else if (input.includes("telecom") || input.includes("ftth")) {
+        response = "We deliver FTTH design & telecom engineering services globally.";
+    }
+
+    document.getElementById("chat-response").innerText = response;
+}
+</script></body>
+</html>
